@@ -20,6 +20,7 @@
     "react": "^18",
     "react-dom": "^18",
     "react-i18next": "^15.0.2",
+    "react-toastify": "^10.0.5",
     "sass": "^1.79.4",
     "scss": "^0.2.4",
     "zustand": "^5.0.0-rc.2"

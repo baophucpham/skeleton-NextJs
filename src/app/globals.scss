@@ -14,6 +14,23 @@ body {
   background: #fff !important;
   background-color: #fff !important;
 }
+.Toastify__toast--success {
+  border-radius: 6px;
+  border: 1px solid #12b897;
+  background: rgba(18, 184, 151, 0.1);
+  color: #0a987c;
+  font-size: 14px;
+  font-weight: 400;
+}
+.Toastify__toast--error {
+  border-radius: 6px;
+  border: 1px solid var(--semantic-sb-red-200-ffa-29-b, #ffa29b);
+  background: var(--semantic-sb-red-100-ffeae-6, #ffeae6);
+  box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.15);
+  color: var(--semantic-sb-red-cc-3027, #CC3027);
+  font-size: 14px;
+  font-weight: 400;
+}
 
 *,
 *:before,
