@@ -1,5 +1,5 @@
 import { useEffect } from 'react';
-import { EventBusService } from './EventBus';
+import { EventBusService } from './event-bus';
 
 const useEventBus = (eventName: string, callback: (data: any) => void) => {
     useEffect(() => {

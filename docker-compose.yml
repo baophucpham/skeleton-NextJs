@@ -1,0 +1,17 @@
+version: '3.8'
+services:
+  ecom-front:
+    image: solar/ecom-front:${TAG:-latest}
+    build:
+      context: .
+      dockerfile: Dockerfile
+      args:
+        NEXT_PUBLIC_BASE_URL: "https://stride.trustifytechnology.com"
+        NEXT_PUBLIC_SECRET_KEY_LOCAL: "8O7PTOu3QJ6Ija.ydhZFS82g2e8ULAzP@560j6yIQjldr0Hb4D#d7mRSZqUTzymsB"
+    container_name: ecom-front
+    ports:
+      - '3000:3000'
+    environment:
+      - NODE_ENV=production
+      - NEXT_PUBLIC_BASE_URL="https://stride.trustifytechnology.com"
+

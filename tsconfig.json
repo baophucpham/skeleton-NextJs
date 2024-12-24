@@ -20,14 +20,17 @@
     ],
     "paths": {
       "@/*": ["./src/*"],
-      "@/api":["./src/api"],
-      "@/components":["./src/components"],
-      "@/constans":["./src/constans"],
-      "@/hooks":["./src/hooks"],
-      "@/stores":["./src/stores"],
-      "@/Utils":["./src/Utils"]
-    }
+      "@/api": ["./src/api"],
+      "@/components": ["./src/components"],
+      "@/constans": ["./src/constans"],
+      "@/hooks": ["./src/hooks"],
+      "@/stores": ["./src/stores"],
+      "@/utilities": ["./src/utilities"],
+      "@/Images": ["./public/assets"],
+      "@/types": ["./src/types"]
+    },
+    "types": ["styled-components", "@types/styled-components"]
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts", "next-i18next.config.js"],
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts"],
   "exclude": ["node_modules"]
 }

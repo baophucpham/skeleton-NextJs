@@ -11,13 +11,13 @@ body {
   font-weight: 500;
   font-size: 16px !important;
   line-height: 1.5;
-  background: #fff !important;
-  background-color: #fff !important;
+  background: #f7faff !important;
+  background-color: #f7faff !important;
 }
 .Toastify__toast--success {
   border-radius: 6px;
   border: 1px solid #12b897;
-  background: rgba(18, 184, 151, 0.1);
+  background: rgb(18, 184, 151);
   color: #0a987c;
   font-size: 14px;
   font-weight: 400;
@@ -27,7 +27,7 @@ body {
   border: 1px solid var(--semantic-sb-red-200-ffa-29-b, #ffa29b);
   background: var(--semantic-sb-red-100-ffeae-6, #ffeae6);
   box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.15);
-  color: var(--semantic-sb-red-cc-3027, #CC3027);
+  color: var(--semantic-sb-red-cc-3027, #cc3027);
   font-size: 14px;
   font-weight: 400;
 }
@@ -38,6 +38,7 @@ body {
   box-sizing: border-box;
   padding: 0;
   margin: 0;
+  scrollbar-width: thin;
 }
 
 button,
@@ -50,4 +51,123 @@ select {
 a {
   color: inherit;
   text-decoration: none;
+}
+.errorMessage {
+  color: #ff4d4f;
+}
+.text-gray {
+  color: #a5a5a5;
+}
+.text-blue {
+  color: #1877f2;
+}
+.content {
+  padding-left: 5%;
+  padding-right: 5%;
+  padding-top: 20px;
+  .admin-head-title {
+    padding-bottom: 20px;
+    h1 {
+      font-size: 48px;
+    }
+  }
+}
+
+.login-container {
+  background-image: url("../../public/assets/image/login-image.webp") !important;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  .viewLoginForm {
+    background-color: #ffffff45;
+    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(15px);
+    border-radius: 12px;
+    border: 1px solid #ffffff;
+    width: 438px;
+    min-height: 280px;
+    padding: 32px 24px 32px 24px;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 60px;
+    color: #ffffff;
+  }
+  .titleLogin {
+    font-weight: 600;
+    font-size: 13px;
+    line-height: 19.5px;
+  }
+  .titleInput {
+    color: #ffffff;
+  }
+  .inputText {
+    height: 48px;
+    line-height: 50px;
+    .ant-input {
+      height: 100%;
+      line-height: inherit;
+    }
+  }
+  .ButtonLogin {
+    height: 48px;
+    border-radius: 12px;
+    background-color: #ffc200;
+    color: #0f2442;
+    font-weight: 600;
+    line-height: 24px;
+    &:hover {
+      background-color: #ffc200 !important;
+      color: #0f2442 !important;
+    }
+  }
+
+  .footerContentLogin {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 26px;
+    display: flex;
+  }
+  .btnSignUp {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 26px;
+    cursor: pointer;
+    margin-left: 10px;
+  }
+  .forGotPass {
+    display: flex;
+    justify-content: space-between;
+  }
+  .linkForgotPass {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 26px;
+    cursor: pointer;
+    margin-left: 10px;
+    color: #ffffff;
+  }
+  .imageLogo {
+    width: 100px;
+    height: 40.88px;
+  }
+  .viewImageLogo {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    padding: 26px 0px 0px 44px;
+  }
+  .errorMessage {
+    font-size: 16px;
+    margin: 10px 0 10px 0;
+  }
+}
+
+ul {
+  list-style-type: none;
 }
